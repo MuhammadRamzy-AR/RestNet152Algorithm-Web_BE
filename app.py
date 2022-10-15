@@ -31,6 +31,7 @@ def resnet_v1():
     """
     img_uploaded = request.files
     img_file = img_uploaded.get('file')
+    filename_orig = secure_filename(img_file.filename) # used for make it easier to see what is the original file
     filename = 'identification_img.png' # save file 
     filepath = os.path.join(app.config['imgdir'], filename);
     img_pred1 = img_file.save(filepath)
@@ -58,6 +59,7 @@ def resnet_v1():
         file_status = "Cannot be processed"
         success_status = False
         details = {
+            'processed_file': filename_orig,
             'response_string': response_string, 
             'file_Status': file_status, 
             'success_status': success_status,
@@ -68,6 +70,7 @@ def resnet_v1():
         file_status = "Received"
         success_status = True
         details = {
+            'processed_file': filename_orig,
             'response_string': response_string, 
             'file_Status': file_status, 
             'success_status': success_status,
@@ -94,6 +97,7 @@ def resnet_V2():
     """
     img_uploaded = request.files
     img_file = img_uploaded.get('file')
+    filename_orig = secure_filename(img_file.filename) # used for make it easier to see what is the original file
     filename = 'identification_img.png' # save file 
     filepath = os.path.join(app.config['imgdir'], filename);
     img_pred1 = img_file.save(filepath)
@@ -121,6 +125,7 @@ def resnet_V2():
         file_status = "Cannot be processed"
         success_status = False
         details = {
+            'processed_file': filename_orig,
             'response_string': response_string, 
             'file_Status': file_status, 
             'success_status': success_status,
@@ -131,6 +136,7 @@ def resnet_V2():
         file_status = "Received"
         success_status = True
         details = {
+            'processed_file': filename_orig,
             'response_string': response_string, 
             'file_Status': file_status, 
             'success_status': success_status,
