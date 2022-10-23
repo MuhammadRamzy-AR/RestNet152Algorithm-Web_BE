@@ -27,20 +27,20 @@ user@pc:~$ flask run
 ```console
 SSL Module not Found
 ```
-If you get an error that looks like the above output when trying to install a package in the environment, you can troubleshoot this problem by copy-paste the following files from conda_installation_directory\Library\bin to conda_installation_directory\DLLs.
+If you get an error that looks like the output above when trying to install a package in the environment, you can troubleshoot this problem by copy-paste the following files from conda_installation_directory\Library\bin to conda_installation_directory\DLLs.
 - libcrypto-1_1-x64.dll
 - libcrypto-1_1-x64.pdb
 - libssl-1_1-x64.dll
 - libssl-1_1-x64.pdb
 If you leave the default option for installation directory when installing anaconda or miniconda, usually the directory is located at:
-For Anaconda
 ```console
 C:\Users\<your_username>\Anaconda3\ or C:\ProgramData\Anaconda3
 ```
-For Miniconda
+For Anaconda
 ```console
 C:\Users\<your_username>\Miniconda3\ or C:\ProgramData\Miniconda3
 ```
+For Miniconda
 2. ImportError on importing _imageging.
 ```console
 ImportError: DLL load failed while importing _imaging: The specified module could not be found.
