@@ -44,8 +44,8 @@ If you get an error that looks like the output above when trying to install a pa
 - libcrypto-1_1-x64.dll
 - libcrypto-1_1-x64.pdb
 - libssl-1_1-x64.dll
-- libssl-1_1-x64.pdb
-If you leave the default option for installation directory when installing anaconda or miniconda, usually the directory is located at:
+- libssl-1_1-x64.pdb\
+If you leave the default option for installation directory when installing anaconda or miniconda, usually the installation directory is located at:
 ```console
 C:\Users\<your_username>\Anaconda3\ or C:\ProgramData\Anaconda3
 ```
