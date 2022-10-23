@@ -36,11 +36,10 @@ If you leave the default option for installation directory when installing anaco
 ```console
 C:\Users\<your_username>\Anaconda3\ or C:\ProgramData\Anaconda3
 ```
-For Anaconda
+For Anaconda and for Miniconda:
 ```console
 C:\Users\<your_username>\Miniconda3\ or C:\ProgramData\Miniconda3
 ```
-For Miniconda
 2. ImportError on importing _imageging.
 ```console
 ImportError: DLL load failed while importing _imaging: The specified module could not be found.
