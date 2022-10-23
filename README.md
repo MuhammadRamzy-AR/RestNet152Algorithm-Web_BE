@@ -14,7 +14,7 @@ user@pc:~$ conda create --name flask_api --file requirements_win10.txt
 ```console
 user@pc:~$ conda install --name flask_api --file requirements_win10.txt
 ```
-## Manually Installing The Required Packages (Alternative)
+## Manually Install The Required Packages (Alternative)
 If you prefer to install the required packages manually, you can follow the steps below.
 1.  Make sure you have python or preferably anaconda or miniconda installed.
 2.  Create new virtual environment to prevent breaking your main python or conda base environment.
