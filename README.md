@@ -2,7 +2,19 @@
 
 This API is made to serve main ResNet 152 Classifaction website (front-end) to do image classification with ResNet-152 V1 and ResNet-152 V2 model.
 
-## How to Run
+# How to Run
+## Importing requirements.txt
+1.  Make sure you have python or preferably anaconda or miniconda installed.
+2.  Create new virtual environment using the command below.
+- Command to create a new conda environment:
+```console
+user@pc:~$ conda create --name flask_api --file requirements_win10.txt
+```
+- If you prefer to install the required packages to an existing environment, you can use this command:
+```console
+user@pc:~$ conda install --name flask_api --file requirements_win10.txt
+```
+## Manually Installing The Required Packages
 1.  Make sure you have python or preferably anaconda or miniconda installed.
 2.  Create new virtual environment to prevent breaking your main python or conda base environment.
     example for creating new environment with conda
